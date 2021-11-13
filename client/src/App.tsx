@@ -1,15 +1,13 @@
+import Router from './components/Router'
 
 
 
-import Home from './pages/home/Home';
-import SinIn from './pages/sinIn/SinIn'
 
 function App() {
    return (
-    <div>
-      <SinIn/>
-    </div>
-   
+      <>
+        <Router/>
+      </>
     );
 }
 

@@ -4,9 +4,21 @@ import SearchIcon from '@material-ui/icons/SearchOutlined';
 import {useStylesHome} from './style'
 import SideMenu from '../../components/SideMenu';
 import Tweet from '../../components/Tweet'
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../store/store';
+import { TweetsActionsType } from '../../store/ducks/tweets/actionCreators';
 
 const Home = () => {
    const classes = useStylesHome()
+   const items = useSelector((state: RootState) => state.tweets.items)
+   const dispatch = useDispatch()
+   
+   console.log(items)
+
+   useEffect(() => {
+      dispatch({type: TweetsActionsType.FETCH_TWEETS})
+   }, [])
 
    return (
       <Container maxWidth="lg" className={classes.homeWrapper}>

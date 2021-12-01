@@ -1,0 +1,15 @@
+ [
+       {
+         "_id" : "1",
+         "text": "text 111",
+         "createdAt": "05/10/2021",
+         "updatedAt": "05/10/2021",
+         "user": {
+            "fullname" : "ВАСЯ",
+            "username" : "ВАСЯ",
+            "avatarSrc" : ""
+
+         },
+         "images": []
+       }
+   ]

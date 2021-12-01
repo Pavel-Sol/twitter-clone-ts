@@ -19,7 +19,7 @@ const Router = () => {
                <Route exact path="/">
                   <Home />
                </Route>
-               <Redirect to='/' />
+               {/* <Redirect to='/' /> */}
             </Switch>)
 
             : (<Switch>
